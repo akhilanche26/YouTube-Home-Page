@@ -1,0 +1,120 @@
+.timer{
+    background-color:black;
+    color:white;
+    font-size:12px;
+    font-family:arial;
+    font-weight:bold;
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    padding-left:2px;
+    padding-right:2px;
+    padding-top:2px;
+    padding-bottom:4px;
+    border-radius:2px;
+}
+.thumbnail{
+    width:100%;
+}
+
+.video-title{
+    margin-top:0;
+    font-size:14px;
+    font-weight:bold;
+    line-height:20px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.video-info-grid{
+display:grid;
+grid-template-columns: 50px 1fr;
+}
+
+
+.profile-picture{
+width:36px;
+border-radius:20px;
+}
+.profile-picture:hover .channel-info{
+    opacity:1;
+}
+
+.thumbnail-row{
+margin-bottom:8px;
+position:relative;
+cursor:pointer;
+}
+.video-author,.video-stats{
+color:gray;
+font-size:12px;
+}
+.video-author{
+margin-bottom:4px;
+}
+.video-grid{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+column-gap:16px;
+row-gap:40px; 
+}
+@media (max-width:650px){
+    .video-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+@media (min-width:651px) and (max-width:999px){
+    .video-grid{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+@media (min-width:1000px){
+    .video-grid{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
+.video-link{
+    color:black;
+    text-decoration:none;
+}
+.entire-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.channel-owner{
+    width:90px;
+    height:90px;
+    border-radius:45px;
+    margin-top:3px;
+}
+.channel-info{
+    display:flex;
+    border-radius:9px;
+    box-shadow:2px 3px 4px rgba(0,0,0,0.3);
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:15px;
+    padding-right:15px;
+    opacity:0;
+}
+.name{
+    font-weight:bold;
+    font-size:26px;
+    margin-top:26px;
+    margin-bottom:5px;
+    white-space:nowrap;
+}
+.subs{
+    color:rgb(70,67,67);
+    font-size:22px;
+    white-space:nowrap;
+}
+.channel-information{
+    display:flex;
+    flex-direction:column;
+    margin-left:10px;
+}
+.nothing{
+    text-decoration:none;
+}
